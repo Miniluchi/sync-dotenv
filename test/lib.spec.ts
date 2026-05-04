@@ -92,7 +92,7 @@ describe("sync-dotenv lib", () => {
 			try {
 				lib.writeToSampleEnv(SAMPLE_ENV_PATH, parseEnv(ENV_PATH));
 			} catch (error) {
-				expect(error.message).contains(message);
+				expect((error as Error).message).contains(message);
 			}
 		});
 	});
@@ -101,6 +101,22 @@ describe("sync-dotenv lib", () => {
 		it("remove object property values", () => {
 			const obj = { foo: "bar" };
 			expect(lib.emptyObjProps(obj)).to.have.deep.property("foo", "");
+		});
+
+		it("preserves comment lines with single quotes intact (bug #54)", () => {
+			const obj = { "__COMMENT_0__": "# don't use 'production' here" };
+			expect(lib.emptyObjProps(obj)).to.have.deep.property(
+				"__COMMENT_0__",
+				"# don't use 'production' here"
+			);
+		});
+
+		it("preserves comment lines with double quotes intact (bug #54)", () => {
+			const obj = { "__COMMENT_0__": `# use "staging" not "production"` };
+			expect(lib.emptyObjProps(obj)).to.have.deep.property(
+				"__COMMENT_0__",
+				`# use "staging" not "production"`
+			);
 		});
 	});
 
