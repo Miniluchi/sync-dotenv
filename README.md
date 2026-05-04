@@ -2,8 +2,7 @@
 	<img src="https://i.imgur.com/TRGtM83.gif">
 	<h1 style="font-weight:bold;">sync ⚙️ dotenv</h1>
     <p>Keep your .env in sync with .env.example</p>
-    <img alt="Travis (.org)" src="https://img.shields.io/travis/codeshifu/sync-dotenv.svg?logo=travis">
-	<img alt="Coveralls github" src="https://img.shields.io/coveralls/github/codeshifu/sync-dotenv.svg?style=popout">
+    <img alt="npm" src="https://img.shields.io/npm/v/@miniluchi/sync-dotenv">
 </div>
 
 ## Motivation
@@ -26,13 +25,13 @@ Enter `sync-dotenv` 🔥
 ## Installation
 
 ```bash
-$ npm install -g sync-dotenv
+$ npm install -g @miniluchi/sync-dotenv
 ```
 
 Install as a dev dependency (**recommended**)
 
 ```bash
-$ npm install -D sync-dotenv
+$ npm install -g @miniluchi/sync-dotenv
 ```
 
 ## Usage
@@ -128,6 +127,7 @@ You might not want to copy empty lines or comments to your sample env, in this c
   "comments": false
 }
 ```
+
 Note that you can still combine those options with `preserve`.
 
 ## Related
@@ -146,7 +146,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+## Maintenance & Fork
+
+This package is a maintained fork of the original sync-dotenv by [Luqman Ahmed](https://github.com/luqmanoop/sync-dotenv).
+
+As the original repository is no longer active, this version includes bug fixes and updates to ensure compatibility with recent environments.
+
+All credits for the initial logic go to the original author.
+
 ## License
 
 This project is licensed under
-[MIT](https://github.com/codeshifu/sync-dotenv/blob/master/LICENSE)
+[MIT](https://github.com/miniluchi/sync-dotenv/blob/master/LICENSE)
