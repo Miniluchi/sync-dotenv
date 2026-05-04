@@ -63,3 +63,10 @@ typings/
 dist
 **/.rts*
 sample.js
+
+# Parcel cache
+.parcel-cache
+
+# Compiled TypeScript output in source directory
+lib/**/*.js
+lib/**/*.d.ts

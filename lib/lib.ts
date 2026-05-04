@@ -32,13 +32,17 @@ export const writeToSampleEnv = (path: string, parsedEnv: object) => {
 	try {
 		fs.writeFileSync(path, envToString(parsedEnv));
 	} catch (e) {
-		throw new Error(`Sync failed. ${e.message}`);
+		throw new Error(`Sync failed. ${(e as Error).message}`);
 	}
 };
 
 export const emptyObjProps = (obj: EnvObject) => {
 	const objCopy = { ...obj };
 	Object.keys(objCopy).forEach(key => {
+		if (key.startsWith("__COMMENT_")) {
+			return;
+		}
+
 		if (objCopy[key].includes("#")) {
 			if (objCopy[key].match(/(".*"|'.*')/g)) {
 				const objArr = objCopy[key].split(/(".*"|'.*')/);
@@ -51,10 +55,7 @@ export const emptyObjProps = (obj: EnvObject) => {
 			return;
 		}
 
-		/* istanbul ignore else */
-		if (!key.startsWith("__COMMENT_")) {
-			objCopy[key] = "";
-		}
+		objCopy[key] = "";
 	});
 
 	return objCopy;
