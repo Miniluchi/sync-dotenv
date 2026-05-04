@@ -41,7 +41,19 @@
         "test",
         "doc"
       ]
+    },
+    {
+      "login": "Miniluchi",
+      "name": "Nathan OGER",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28657811?v=4",
+      "profile": "https://github.com/Miniluchi",
+      "contributions": [
+        "code",
+        "maintenance",
+        "projectManagement"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "commitConvention": "angular"
 }
