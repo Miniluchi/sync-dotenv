@@ -1,6 +1,6 @@
 {
 	"name": "sync-dotenv",
-	"version": "2.7.0",
+	"version": "2.8.0",
 	"description": "Keep your .env in sync with .env.example",
 	"keywords": [
 		".env",
@@ -18,16 +18,19 @@
 		"LICENSE.md",
 		"README.md"
 	],
-	"homepage": "https://github.com/codeshifu/sync-dotenv#readme",
+	"homepage": "https://github.com/miniluchi/sync-dotenv#readme",
 	"bugs": {
-		"url": "https://github.com/codeshifu/sync-dotenv/issues"
+		"url": "https://github.com/miniluchi/sync-dotenv/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/codeshifu/sync-dotenv.git"
+		"url": "git+https://github.com/miniluchi/sync-dotenv.git"
 	},
 	"license": "MIT",
 	"author": "Luqman Olushi <olushilukmon03@gmail.com> (https://codeshifu.github.io/)",
+	"contributors": [
+		"Nathan OGER <github.sultry568@passmail.net>"
+	],
 	"directories": {
 		"lib": "lib"
 	},
