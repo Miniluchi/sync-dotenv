@@ -84,12 +84,6 @@
 		"parse-dotenv": "2.1.0",
 		"pkg-conf": "^3.1.0"
 	},
-	"targets": {
-		"default": {
-			"context": "node",
-			"outputFormat": "commonjs"
-		}
-	},
 	"nyc": {
 		"extension": [
 			".ts"
