@@ -18,13 +18,13 @@
 		"LICENSE.md",
 		"README.md"
 	],
-	"homepage": "https://github.com/Miniluchi/sync-dotenv#readme",
+	"homepage": "https://github.com/codeshifu/sync-dotenv#readme",
 	"bugs": {
-		"url": "https://github.com/Miniluchi/sync-dotenv/issues"
+		"url": "https://github.com/codeshifu/sync-dotenv/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Miniluchi/sync-dotenv.git"
+		"url": "git+https://github.com/codeshifu/sync-dotenv.git"
 	},
 	"license": "MIT",
 	"author": "Luqman Olushi <olushilukmon03@gmail.com> (https://codeshifu.github.io/)",
