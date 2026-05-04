@@ -2,7 +2,9 @@
 	<img src="https://i.imgur.com/TRGtM83.gif">
 	<h1 style="font-weight:bold;">sync ⚙️ dotenv</h1>
     <p>Keep your .env in sync with .env.example</p>
-    [![npm version](https://img.shields.io/npm/v/@miniluchi/sync-dotenv.svg)](https://www.npmjs.com/package/@miniluchi/sync-dotenv)
+    <a href="https://www.npmjs.com/package/@miniluchi/sync-dotenv">
+      <img src="https://img.shields.io/npm/v/@miniluchi/sync-dotenv.svg" alt="npm version">
+    </a>
 </div>
 
 ## Motivation
